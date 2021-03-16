@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import Aladin from "./components/Aladin";
+import Topbar from "./components/Topbar/Topbar";
+import Aladin from "./components/Aladin/Aladin";
 import reportWebVitals from "./reportWebVitals";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Aladin />
+    <App/>
   </React.StrictMode>,
   document.getElementById("root")
 );

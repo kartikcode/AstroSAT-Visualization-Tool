@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'QuantumRegular';
+    src: local('QuantumRegular'), url(../../fonts/QuantumRegular.ttf) format('truetype');
+  }
+
+.Heading{
+    font-family: 'QuantumRegular', serif;
+    color: darkcyan;
+    font-size: 5vw;
+    padding-right: 5vw;
+}
+
+.glow {
+  font-family: 'QuantumRegular', serif;
+  font-size: 5vw;
+  padding-right: 5vw;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #008b8b, 0 0 40px #008b8b, 0 0 50px #008b8b;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #00bebe, 0 0 40px #00bebe, 0 0 50px #00bebe, 0 0 60px #00bebe;
+  }
+}
