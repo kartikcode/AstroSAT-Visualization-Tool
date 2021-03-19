@@ -1,35 +1,8 @@
+import { CallToActionRounded } from "@material-ui/icons";
 import React, { useEffect, useState } from "react";
+import Button from "@material-ui/core/Button";
 
-const Aladin = () => {
-  // function for connecting the API endpoints
-  const sendHttpRequest = (method, url, data) => {
-    return fetch(url, {
-      method: method,
-      body: JSON.stringify(data),
-      headers: data ? { 'Content-Type': 'application/json' } : {}
-    }).then(response => {
-      if (response.status >= 400) {
-        // !response.ok
-        return response.json().then(errResData => {
-          const error = new Error('Something went wrong!');
-          error.data = errResData;
-          throw error;
-        });
-      }
-      return response.json();
-    });
-  };
-  
-  // function for fetching the cpmplaint database
-  const [data, setData] = useState([])
-  useEffect(() => {
-    sendHttpRequest('GET', 'http://localhost:8000/isro/getdata/').then(responseData => {
-      console.log(responseData.data);
-      setData(responseData.data);
-    });
-  },[])
-
-
+const Aladin = (props) => {
   useEffect(() => {
     let aladin = window.A.aladin("#aladin-lite-div", {
       survey: "P/DSS2/color",
@@ -37,9 +10,13 @@ const Aladin = () => {
     });
     let markerLayer = window.A.catalog();
     aladin.addCatalog(markerLayer);
-    var sources = data.map(dataset => window.A.marker(dataset.ra,dataset.dec, {popupTitle: dataset.name, popupDesc: "Available through AstroSAT:".concat((dataset.astrosat).toString())}));
+    var sources = props.data.map((dataset) =>
+      window.A.marker(dataset.ra, dataset.dec, {
+        popupTitle: dataset.name,
+        popupDesc: "THis is so ${dataset.name} easy",
+      })
+    );
     markerLayer.addSources(sources);
-    aladin.setFov(1);
   }, []);
 
   return (
