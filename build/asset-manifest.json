@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.3000ed9b.chunk.css",
+    "main.js": "./static/js/main.a0295471.chunk.js",
+    "main.js.map": "./static/js/main.a0295471.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.46ebbabc.js",
+    "runtime-main.js.map": "./static/js/runtime-main.46ebbabc.js.map",
+    "static/js/2.a4d8c0a9.chunk.js": "./static/js/2.a4d8c0a9.chunk.js",
+    "static/js/2.a4d8c0a9.chunk.js.map": "./static/js/2.a4d8c0a9.chunk.js.map",
+    "static/js/3.73f17d0d.chunk.js": "./static/js/3.73f17d0d.chunk.js",
+    "static/js/3.73f17d0d.chunk.js.map": "./static/js/3.73f17d0d.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.3000ed9b.chunk.css.map": "./static/css/main.3000ed9b.chunk.css.map",
+    "static/js/2.a4d8c0a9.chunk.js.LICENSE.txt": "./static/js/2.a4d8c0a9.chunk.js.LICENSE.txt",
+    "static/media/style.css": "./static/media/QuantumRegular.c3a0b4b2.ttf",
+    "static/media/iitk.b5d612f4.jpg": "./static/media/iitk.b5d612f4.jpg",
+    "static/media/isro.10dbd498.png": "./static/media/isro.10dbd498.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.46ebbabc.js",
+    "static/js/2.a4d8c0a9.chunk.js",
+    "static/css/main.3000ed9b.chunk.css",
+    "static/js/main.a0295471.chunk.js"
+  ]
+}

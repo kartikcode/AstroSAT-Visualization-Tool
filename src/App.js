@@ -45,7 +45,7 @@ export default function App() {
   useEffect(() => {
     sendHttpRequest("GET", "http://127.0.0.1:8000/isro/getdata/").then(
       (responseData) => {
-        console.log(responseData);
+        //console.log(responseData);
         setData(responseData);
       }
     );
