@@ -64,7 +64,7 @@ export default Aladin;
 <script>
 	var modal=document.getElementById("myModal");var btn=document.getElementById("myBtn");var span=document.getElementsByClassName("close")[0];function handleClick(){modal.style.display="block";} function handleClose(){modal.style.display="none";} window.onclick=function(event){if(event.target==modal){modal.style.display="none";}}
   </script>      
-  <script>
+  <script>   
 function demoFromHTML() {
         var pdf = new jsPDF('p', 'pt', 'letter');   
         source = $('#modal-body')[0];

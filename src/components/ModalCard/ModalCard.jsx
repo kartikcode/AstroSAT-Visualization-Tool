@@ -33,13 +33,13 @@ export default function ModalCard() {
         transform: `translate(-50%, -45%)`,
       }} 
     className={classes.paper}>
-      <h2 id="simple-modal-title">Welcome to AstroSat Visualizer!</h2>
+      <h2 id="simple-modal-title">Welcome to Geenie: The AstroSat Visualizer!</h2>
       <p id="simple-modal-description">
-      This site was designed by a team of sophomores at the Indian Institute of Technology Kanpur and is 
+      This site was designed by a team of sophomores from Team 16 and is 
       based on Aladin, an interactive sky atlas. We present a <b>3-D sky map of 280 X-Ray Binaries</b> using
       Liu+ (2001).  The source names have been resolved using SIMBAD and is accurate upto atleast 2 arcmin!
-      <br/><br/>Using our tool you can also <b>find out whether the source has been observed by AstroSat</b>
-       within the last 2 years and <b>you can also find publications corresponding to the source</b>. COOL right?
+      <br/><br/>Using our tool you can also <b>find out whether the source has been observed by AstroSat </b> 
+      within the last 2 years and <b>you can also find publications corresponding to the source</b>. COOL right?
       Contact our team if you wish to give any feedback. We would love to hear back from you. <br/><br/>
       <i>Happy Stargazing!</i>
       </p>
