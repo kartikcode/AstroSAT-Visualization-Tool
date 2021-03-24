@@ -8,7 +8,7 @@ was used. This API was successfully integrated in the frontend UI as a ReactJS c
 To get the project up and running, and view it in the browser, complete the following steps:
 
 1. Download and install Node: <https://nodejs.org/>
-2. Clone this repo: `git clone git@github.com:kartikcode/AstroSAT-Visualization-Tool.git` (SSH) or `git clone https://github.com/kartikcode/AstroSAT-Visualization-Tool.git` (HTTPS)
+2. Clone this repo.
 3. Install project dependancies: `npm install`
 4. Start the development environment: `npm start`
 5. Open your browser and visit <http://localhost:3000>
