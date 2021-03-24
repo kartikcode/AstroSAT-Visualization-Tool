@@ -1,3 +1,4 @@
+// importing dependencies
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
@@ -8,6 +9,7 @@ import InitialCard from "./components/Cards/InitialCard";
 import StarfieldAnimation from "react-starfield-animation";
 import ModalCard from "./components/ModalCard/ModalCard";
 
+// Adding CSS styles for React components 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
