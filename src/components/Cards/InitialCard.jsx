@@ -81,7 +81,7 @@ export default function InitialCard() {
       </CardContent>
       <CardActions style={{marginTop:'0'}}>
       <a style={{textDecoration:"none",}} href="https://drive.google.com/file/d/1WiloUV13bP-KFWHciXHBsNi613FWOihW/view?usp=sharing" download="Complete_Catalog"><Button size="small" variant="contained" color="primary">Download Catalogs</Button></a>
-      <a style={{textDecoration:"none",}} href="https://github.com"><Button size="small" variant="contained" color="primary">View User Manual</Button></a>
+      <a style={{textDecoration:"none",}} href="https://drive.google.com/file/d/1ixOgcMPCoolMTo8uvkESYTDJCQQBww5O/view?usp=sharing"><Button size="small" variant="contained" color="primary">View User Manual</Button></a>
       </CardActions>
     </Card>
   );
