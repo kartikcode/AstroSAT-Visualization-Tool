@@ -1,3 +1,4 @@
+// importing dependencies
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -10,8 +11,7 @@ import isro from "./isro.png";
 import iitk from "./iitk.jpg";
 import "./style.css";
 
-
-
+// Adding CSS styles for React components
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,

@@ -1,11 +1,14 @@
+// importing dependencies
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { createMuiTheme, responsiveFontSizes, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 
+
+// Adding CSS styles for React components
 const useStyles = makeStyles({
   root: {
     backgroundColor: '#424242',
@@ -26,17 +29,34 @@ const useStyles = makeStyles({
   },
 });
 
+// Utilising the custom MuiTheme option for Material UI components
+const theme = createMuiTheme({
+  typography: {
+    body2: {
+      fontFamily: 'Segoe UI',
+      fontSize: '0.9rem',
+    },
+    h4: {
+      fontWeight: 500,
+      fontFamily: 'Segoe UI',
+    },
+    button: {
+      fontStyle: 'italic',
+    },
+  },
+});
+
 export default function InitialCard() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
+      <ThemeProvider theme={theme}>
         <Typography variant="h4" component="h2">
-        <font color="aqua">How to use it?</font>
+        <font color="aqua"><center>How to use it?</center></font>
         </Typography>
-        <Typography variant="body1" component="p">
+        <Typography variant="body2" component="p">
         <ul>
            <li> Zoom in/out the map using the scroll button. </li>
            <li> Simply select the map to change the angle and direction of FOV.</li>
@@ -46,18 +66,20 @@ export default function InitialCard() {
           </ul>
         </Typography>
         <Typography variant="h4" component="h2">
-            <font color="aqua">Key Features</font>
+            <font color="aqua"><center>Key Features</center></font>
         </Typography>
-        <Typography variant="body1" component="p">
+        <Typography variant="body2" component="p">
          <ul>
            <li> GUI controlled options to control the base image layer with 20+ available options. </li>
            <li> Interactive options to change the color map amongst the five available options. </li>
            <li> Import any map view as an image. </li> 
           </ul>
         </Typography>
+        </ThemeProvider>
       </CardContent>
-      <CardActions style={{marginTop:'28vh'}}>
-        <Button size="small">Footer Heading</Button>
+      <CardActions style={{marginTop:'5vh'}}>
+      <a style={{textDecoration:"none",}} href="https://drive.google.com/file/d/1WiloUV13bP-KFWHciXHBsNi613FWOihW/view?usp=sharing" download="Complete_Catalog"><Button size="small" variant="contained" color="primary">Download Catalogs</Button></a>
+      <a style={{textDecoration:"none",}} href="https://github.com"><Button size="small" variant="contained" color="primary">View Source Code</Button></a>
       </CardActions>
     </Card>
   );

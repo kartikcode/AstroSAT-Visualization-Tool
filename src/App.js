@@ -6,6 +6,7 @@ import Aladin from "./components/Aladin/Aladin";
 import Topbar from "./components/Topbar/Topbar";
 import InitialCard from "./components/Cards/InitialCard";
 import StarfieldAnimation from "react-starfield-animation";
+import ModalCard from "./components/ModalCard/ModalCard";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,6 +54,7 @@ export default function App() {
 
   return (
     <div className={classes.root}>
+      <ModalCard/>
       <StarfieldAnimation
         style={{
           position: "absolute",
