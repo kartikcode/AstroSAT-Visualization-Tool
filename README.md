@@ -39,7 +39,7 @@ Sometimes it’s helpful to know what all these different files are for…
 /
 ├─ src/
 │  ├─ components/    # Components
-│  │  ├─ Aladin/     # …that render Aladin sky map
+│  │  ├─ Aladin/     # …that renders Aladin sky map
 │  │  ├─ Cards/      # …that appears as the Sidebar
 │  │  ├─ ModalCard/  # …that appear as a popup on first visit
 │  │  ├─ Topbar/     # …that renders the Topbar
