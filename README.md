@@ -1,5 +1,7 @@
 # Geenie: The AstroSAT Visualizer Webtool
 
+#### Video Documetation: https://bit.ly/3crkTjU
+
 ## Requirements
 Geenie is built upon [React JS](https://reactjs.org), and [Material UI](https://material-ui.com/) library that was mainly used for components, templates and pages. Also, for sky mapping, [Aladin API](http://aladin.unistra.fr/AladinLite/)
 was used. This API was successfully integrated in the frontend UI as a ReactJS component, despite of it being an archaic and purely HTML component.
